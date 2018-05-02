@@ -2,23 +2,169 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=500, initial-scale=1">
     <title>Derrick Otte</title>
+    <link rel="stylesheet" type="text/css" href="dist/morphext.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <div class="logo"><img src="assets/logo.png"></div>
-        <div class="links">
-            <a id="homeSection">Home</a>
-            <a id="aboutSection">About</a>
-            <a id="workSection">Work</a>
-            <a id="contactSection">Contact</a>
+    <section id="home">
+        <div class="hello">
+            <h1>Hi, I'm Derrick</h1>
+            <h2 id="js-rotating">Full-stack developer, JavaScript Enthusiast, UX/UI Developer</h2>
         </div>
-    </nav>
-    <section id="home"></section>
-    <section id="about"></section>
-    <section id="work"></section>
-    <section id="contact"></section>
+    </section>
+    <section id="about">
+        <h1 id="aboutHeader">About Me</h1>
+        <div class="aboutSection">
+        <div class="generalAbout">
+            <p>
+                I'm a full-stack developer from Indianapolis, Indiana. Over the years, I have gained experience in building front-end and
+                back-end web applications with JavaScript, AngularJS, Ruby on Rails, PHP/SQL, and Git/Github for version control.
+                Currently, I'm a software developer intern at MOBI Wireless Management using Ruby on Rails and AngularJS.
+            </p>
+            <p>
+                I'm passionate about building user-friendly web applications in as little time as possible.
+                If I'm not developing, you can find me amateur chefing, running, biking, and spending time with my fiance and dog.
+            </p>
+        </div>
+        <div class="aboutImages">
+            <img src="assets/js-logo.png">
+            <img src="assets/angular_solidBlack.png">
+            <img src="assets/rails-logo.png">
+            <img src="assets/php-logo-bigger.png">
+            <img src="assets/GitHub-Mark-64px.png">
+        </div>
+        </div>
+        <h1 id="workHeader">My Work</h1>
+    </section>
+    <section id="work">
+        <div class="partialsWrapper">
+            <div class="partial">
+                <div class="textLeft">
+                    <div class="aWrapper">
+                        <h1>MOBI Wireless Management</h1>
+                        <h3>Software development</h3>
+                        <p>At MOBI, I am a Software Developer Intern. I primarily work on teams
+                            that diagnose and solve bugs in the application and create new features
+                            to meet customer needs. MOBI has allowed me to become adept with Ruby on Rails and AngularJS development,
+                            as well as MVC architecture, PostsgreSQL, agile methodology, and full-stack frameworks.
+                        </p>
+                        <a href="https://mobiwm.com/" target="_blank">Visit MOBI's Site</a>
+                    </div>
+                </div>
+                <div class="imageRight">
+                    <div class="imageWrapper" id="one"></div>
+                </div>
+            </div>
+            <div class="partial">
+                <div class="imageRight">
+                    <div class="imageWrapper" id="two"></div>
+                </div>
+                <div class="textLeft">
+                    <div class="aWrapper">
+                        <h1>Kelley School of Business Indianapolis</h1>
+                        <h3>Full-stack development</h3>
+                        <p>At Kelley, I was a Jr. Web Developer. Along with the marketing team, I helped Kelley design & develop 2 nationally reaching program websites:
+                            their Evening MBA and Business of Medicine MBA.
+                            These sites increased student cohort size by over 50% within the next 2 years.
+                        </p>
+                        <a href="https://kelley.iupui.edu/programs/evening-mba/" target="_blank">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="partial">
+                <div class="textLeft">
+                    <div class="aWrapper">
+                        <h1>PC Builder</h1>
+                        <h3>Full-stack development, UX/UI design & development</h3>
+                        <p>PC Builder is a mobile-friendly web application built for my senior capstone.
+                            PC Builder gives computer builders and gamers the ability to build out future computers and see ones they've built, with a
+                            better mobile interface.
+                            It is built entirely with JavaScript, JQuery, CSS3 Flexbox and Google Firebase.
+                        </p>
+                        <a href="https://github.com/deotte/pc-builder" target="_blank">View Work</a>
+                    </div>
+                </div>
+                <div class="imageRight">
+                    <div class="imageWrapper" id="three"></div>
+                </div>
+            </div>
+            <div class="partial">
+                <div class="imageRight">
+                    <div class="imageWrapper" id="four"></div>
+                </div>
+                <div class="textLeft">
+                    <div class="aWrapper">
+                        <h1>House Picker</h1>
+                        <h3>Full-stack development, UX/UI design & development</h3>
+                        <p>
+                            House Picker is another mobile-friendly web application built for
+                            home owners & renters. I was frustrated with current options for comparing
+                            and contrasting houses I was considering renting, so I built an app to do so with PHP and MySQL.
+                        </p>
+                        <a href="https://github.com/deotte/house-picker" target="_blank">View Work</a>
+                    </div>
+                </div>
+            </div>
+            <div class="partial">
+                <div class="textLeft">
+                    <div class="aWrapper">
+                        <h1>CaptureD</h1>
+                        <h3>UX/UI prototyping & research</h3>
+                        <p>CaptureD is a tech start-up in Indianapolis that offers highlight reel
+                            services for youth sports. They needed market research and a solid foundation
+                            on what techologies would serve their users best. I helped them design and test a progressive web app
+                            prototype with Marvel.
+                        </p>
+                        <a href="https://marvelapp.com/80092e4" target="_blank">View Work</a>
+                    </div>
+                </div>
+                <div class="imageRight">
+                    <div class="imageWrapper" id="five"></div>
+                </div>
+            </div>
+            <div class="partial">
+                <div class="imageRight">
+                    <div class="imageWrapper" id="six"></div>
+                </div>
+                <div class="textLeft">
+                <div class="aWrapper">
+                    <h1>IUSM Department of Emergency Medicine</h1>
+                    <h3>WordPress development</h3>
+                    <p>
+                        At IUSM, I helped create an EM department intranet site with WordPress and PHP. I created dashboards, libraries,
+                        and departmental resources online that streamlined research eﬀorts by medical staﬀ, researchers, and healthcare providers,
+                        reducing IT resource expenses by thousands of dollars.
+                        In addition, I created digital media and website content for IUSM using Adobe Photoshop, Illustrator, and InDesign.
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 id="contactHeader">Contact Me</h1>
+            <form id="contactForm">
+                <h1>Looking to hire a developer?</h1>
+                <h3>Get in touch with me below.</h3>
+                <input id="email" type="email" placeholder="Enter your email">
+                <input id="name" type="text" placeholder="Enter your full name">
+                <input id="title" type="text" placeholder="Title of your message">
+                <textarea id="message" rows="5" cols="50" placeholder="Describe your project here"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        <p id="footer">Made by Derrick Otte</p>
+    </section>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
+    <script src="js/sweetalert2.all.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="dist/morphext.js"></script>
+    <script src="js/firebase.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

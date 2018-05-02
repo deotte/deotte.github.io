@@ -1,8 +1,9 @@
 nav {
     width:100%;
     height:60px;
-    background-color:rgba(0,0,0,.25);
     position: absolute;
+    padding:5px;
+    box-sizing: border-box;
 }
 
 nav img {
@@ -11,26 +12,31 @@ nav img {
     position: absolute;
     top:5px;
     left:10px;
+    padding:10px;
 }
 
 nav .links {
-    width:200px;
+    width:400px;
     height:100%;
     position: absolute;
-    top:5px;
-    right:10px;
     display:flex;
+    right:10px;
 }
 
 nav .links a {
     margin:auto;
     color:white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: 1px solid white;
+    padding:10px;
 }
 
 
 section {
     width:100%;
-    height:100%;
+    min-height:90%;
+    position: relative;
 }
 
 #home {
@@ -38,4 +44,317 @@ section {
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+    background-attachment: fixed;
+    display:flex;
+    height:90%;
 }
+
+#home .hello {
+    margin:auto;
+    width:500px;
+    color:white;
+    padding:10px;
+    text-align:center;
+}
+
+#home .hello h1 {
+    font-size:48px;
+    margin:auto;
+    padding:40px 0 40px 0;
+}
+
+
+#about {
+    display:flex;
+}
+
+#aboutHeader {
+    position:absolute;
+    top:20px;
+    left:30px;
+}
+
+.aboutSection {
+    width:500px;
+    height:500px;
+    margin:auto;
+}
+
+.generalAbout {
+    width:100%;
+    height:50%;
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+}
+
+.aboutImages {
+    width:100%;
+    height:50%;
+    display:flex;
+    flex-wrap: wrap;
+    margin:auto;
+}
+
+.aboutImages img {
+    width:65px;
+    height:65px;
+    margin:auto;
+}
+
+.generalAbout p {
+    margin:auto;
+    padding:10px;
+}
+
+#workHeader {
+    position: absolute;
+    bottom:20px;
+    left:30px;
+}
+
+#work {
+    background-color:rgba(0,0,0,.075);
+}
+
+.partialsWrapper {
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.partial {
+    width:100%;
+    height:500px;
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+    padding:10px;
+    color:#000000;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.partial .textLeft {
+    width:50%;
+    height:100%;
+    display: flex;
+}
+
+.partial .aWrapper {
+    width:75%;
+    height:75%;
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+}
+
+.aWrapper p {
+    margin:auto;
+}
+
+.aWrapper a {
+    color:white;
+    padding:15px;
+    width:150px;
+    background-color:#457afb;
+    border-radius:30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.aWrapper a:hover {
+    background-color:#e06536;
+}
+
+.imageRight {
+    width:50%;
+    height:100%;
+    display:flex;
+}
+
+.imageWrapper {
+    width:600px;
+    height:400px;
+    margin:auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#one {
+    background-image: url("../assets/mobi-portfolio.jpg");
+}
+
+#two {
+    background-image: url("../assets/kelley-portfolio.jpg");
+}
+
+#three {
+    background-image: url("../assets/pc-builder-portfolio.jpg");
+}
+
+#four {
+    background-image:url("../assets/house-picker-portfolio.jpg");
+}
+
+#five {
+    background-image: url("../assets/captured-portfolio.jpg");
+}
+
+#six {
+    background-image: url("../assets/iusm-portfolio.jpg");
+}
+
+#contactHeader {
+    position:absolute;
+    top:20px;
+    left:30px;
+}
+
+#contact {
+    display:flex;
+    flex-direction: column;
+}
+
+#contact form {
+    width:500px;
+    height:700px;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form h1, form h3 {
+    margin:10px;
+}
+
+form input, textarea {
+    width:100%;
+    margin:10px;
+    padding:15px;
+    font-size:16px;
+    border-radius:5px;
+    border:1px solid #7f7f7f;
+}
+
+form input[type=submit]{
+    width:50%;
+    color:white;
+    padding:15px;
+    background-color:#457afb;
+    border-radius:30px;
+}
+
+form input[type=submit]:hover {
+    background-color:#e06536;
+}
+
+#footer {
+    position: absolute;
+    bottom:5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    color:#7f7f7f;
+}
+
+
+/*Media queries*/
+@media only screen and (min-width: 1800px) {
+
+    .partial {
+        width:90%;
+    }
+
+}
+
+@media only screen and (max-width: 1800px) {
+
+    .partial:hover {
+        background-color:rgba(0,0,0,.10);
+    }
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .partial .textLeft {
+        width:60%;
+        padding:20px;
+        box-sizing: border-box;
+    }
+
+    .partial .aWrapper {
+        width:100%;
+    }
+
+    .imageRight {
+        width:40%;
+    }
+
+    .imageWrapper {
+        width:300px;
+        height:200px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .partial {
+        height:850px;
+    }
+
+    .partial .textLeft, .imageRight {
+        width:100%;
+    }
+
+    .partial .textLeft {
+        height:50%;
+        order:1;
+    }
+
+    .textLeft h1, .textLeft h3, .textLeft p {
+        text-align: center;
+    }
+
+    .textLeft a {
+        margin:auto;
+    }
+
+    .partial .imageRight {
+        height:50%;
+        order:2;
+    }
+
+    .imageWrapper {
+        width:600px;
+        height:400px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .imageWrapper {
+        width:300px;
+        height:200px;
+    }
+
+}
+
+
+
+
+

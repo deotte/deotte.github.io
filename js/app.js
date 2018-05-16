@@ -3,7 +3,7 @@ $(document).ready(function () {
     $("#js-rotating").Morphext({
         animation: "fadeIn",
         separator: ",",
-        speed: 3000,
+        speed: 2000,
         complete: function () {
             // Called after the entrance animation is executed.
         }

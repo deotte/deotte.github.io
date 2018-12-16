@@ -5,36 +5,58 @@
     <meta name="viewport" content="width=500, initial-scale=1">
     <title>Derrick Otte</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/section.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/queries.css">
 </head>
 <body>
     <section id="home">
         <div class="hello">
             <h1>Hi, I'm Derrick</h1>
-            <h2 id="js-rotating">Full-stack engineer</h2>
+            <h2>Full-stack engineer</h2>
         </div>
     </section>
     <section id="about">
         <h1 id="aboutHeader">About Me</h1>
         <div class="aboutSection">
-        <div class="generalAbout">
-            <p>
-                I'm a full-stack engineer from Indianapolis, Indiana. Over the years, I have gained experience in Ruby, Ruby on Rails,
-                JavaScript, Angular,
-                Currently, I'm an associate software developer at Tangoe using Ruby on Rails and AngularJS.
-            </p>
-            <p>
-                I'm passionate about building user-friendly web applications in as little time as possible.
-                If I'm not developing, you can find me amateur chefing, running, biking, and spending time with my fiance and dog.
-            </p>
-        </div>
-        <div class="aboutImages">
-            <img src="assets/js-logo.png">
-            <img src="assets/angular_solidBlack.png">
-            <img src="assets/rails-logo.png">
-            <img src="assets/php-logo-bigger.png">
-            <img src="assets/GitHub-Mark-64px.png">
-        </div>
+            <div class="aboutText">
+                <div class="fontSpacer">
+                    <p>
+                        I'm a full-stack engineer from Indianapolis, Indiana.
+                        Currently, I'm an associate software developer at Tangoe using Ruby on Rails and Angular.
+                    </p>
+                    <p>
+                        I focus on on the iterative development cycle and writing clean, re-usable code.
+                        If I'm not developing, you can find me amateur chefing, running, biking, and spending time with my fiance and dog.
+                    </p>
+                    <p>
+                        Here are some tools that I've used before:
+                    </p>
+                </div>
+            </div>
+            <div class="aboutImages">
+                <div class="imagesSpacer">
+                    <div class="row">
+                        <img src="assets/ruby.png">
+                        <img src="assets/rails-logo.png">
+                        <img src="assets/postgres.png">
+                        <img src="assets/firebase.png">
+                        <img src="assets/php-logo-bigger.png">
+                    </div>
+                    <div class="row">
+                        <img src="assets/graphql.png">
+                        <img src="assets/git.png">
+                        <img src="assets/GitHub-Mark-64px.png">
+                        <img src="assets/TravisCI-Mascot-1.png">
+                    </div>
+                    <div class="row">
+                        <img src="assets/angular.png">
+                        <img src="assets/typescript.svg">
+                        <img src="assets/js-logo-yellow.png">
+                        <img src="assets/css.svg">
+                    </div>
+                </div>
+            </div>
         </div>
         <h1 id="workHeader">My Work</h1>
     </section>
@@ -47,9 +69,11 @@
                         <h3>Software development</h3>
                         <p>
                             At MOBI, I am an associate software developer.
-                            I primarily work on teams that create new features and diagnose/solve bugs in our application.
-                            MOBI has allowed me to become adept with Ruby on Rails and AngularJS development, MVC architecture, PostgreSQL and Git/Github
-                            for version control and pull requests.
+                            Currently, I am upgrading MOBI's API to be faster and more secure with GraphQL and RESTful JSON.
+                        </p>
+                        <p>
+                            On a day to day basis, I work on teams that create new features and diagnose/solve bugs in our application.
+                            I also create, review, and test pull requests using Git and CI tools.
                         </p>
                         <a href="https://mobiwm.com/" target="_blank">Visit MOBI's Site</a>
                     </div>
@@ -146,15 +170,8 @@
     </section>
     <section id="contact">
         <h1 id="contactHeader">Contact Me</h1>
-            <form id="contactForm">
-                <h1>Looking to hire a developer?</h1>
-                <h3>Get in touch with me below.</h3>
-                <input id="email" type="email" placeholder="Enter your email">
-                <input id="name" type="text" placeholder="Enter your full name">
-                <input id="title" type="text" placeholder="Title of your message">
-                <textarea id="message" rows="5" cols="50" placeholder="Describe your project here"></textarea>
-                <input type="submit" value="Submit">
-            </form>
+        <h1>Looking to hire a developer?</h1>
+        <h3>Get in touch with me below.</h3>
         <p id="footer">Made by Derrick Otte</p>
     </section>
 </body>

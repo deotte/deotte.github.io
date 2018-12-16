@@ -1,0 +1,28 @@
+section {
+    width:100%;
+    min-height: 90%;
+    position: relative;
+}
+
+#home {
+    background-image:url("../assets/sunglasses.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    display:flex;
+    height:90%;
+}
+
+#about {
+    display:flex;
+}
+
+#work {
+    background-color:rgba(0,0,0,.075);
+}
+
+#contact {
+    display:flex;
+    flex-direction: column;
+}

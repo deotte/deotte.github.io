@@ -1,85 +1,22 @@
 /*Media queries*/
 @media only screen and (min-width: 1800px) {
 
-    .partial {
-        width:90%;
-    }
-
 }
 
 @media only screen and (max-width: 1800px) {
-
-    .partial:hover {
-        background-color:rgba(0,0,0,.10);
-    }
 
 }
 
 
 @media only screen and (max-width: 1200px) {
 
-    .partial .textLeft {
-        width:60%;
-        padding:20px;
-        box-sizing: border-box;
-    }
-
-    .partial .aWrapper {
-        width:100%;
-    }
-
-    .imageRight {
-        width:40%;
-    }
-
-    .imageWrapper {
-        width:300px;
-        height:200px;
-    }
 
 }
 
 @media only screen and (max-width: 800px) {
 
-    .partial {
-        height:850px;
-    }
-
-    .partial .textLeft, .imageRight {
-        width:100%;
-    }
-
-    .partial .textLeft {
-        height:50%;
-        order:1;
-    }
-
-    .textLeft h1, .textLeft h3, .textLeft p {
-        text-align: center;
-    }
-
-    .textLeft a {
-        margin:auto;
-    }
-
-    .partial .imageRight {
-        height:50%;
-        order:2;
-    }
-
-    .imageWrapper {
-        width:600px;
-        height:400px;
-    }
-
 }
 
 @media only screen and (max-width: 600px) {
-
-
-    .imageWrapper {
-        width:300px;
-        height:200px;
-    }
 
 }

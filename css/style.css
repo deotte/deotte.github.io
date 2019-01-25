@@ -1,3 +1,5 @@
+/*Hello section ---------------------*/
+
 #home .hello {
     margin:auto;
     width:500px;
@@ -7,29 +9,17 @@
 }
 
 #home .hello h1 {
-    font-size:48px;
+    font-size:3em;
     margin:auto;
     padding:40px 0 40px 0;
 }
 
+#home .hello h2 {
+    text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#aboutHeader {
+/*About section -------------------*/
+#aboutHeader, #contactHeader {
     position:absolute;
     top:20px;
     left:30px;
@@ -82,29 +72,13 @@
 }
 
 .row img {
-    height:40px;
-    width:40px;
+    height:45px;
+    width:45px;
     padding: 1em;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Work section ------------------*/
 
 #workHeader {
     position: absolute;
@@ -112,77 +86,63 @@
     left:30px;
 }
 
-.partialsWrapper {
-    width:100%;
-    height:100%;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 .partial {
-    width:100%;
+    width:1200px;
     height:500px;
     margin:auto;
     display:flex;
-    flex-wrap: wrap;
-    padding:10px;
-    color:#000000;
-    box-sizing: border-box;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
 }
 
-.partial .textLeft {
+.textLeft, .imageRight {
     width:50%;
-    height:100%;
-    display: flex;
-}
-
-.partial .aWrapper {
-    width:75%;
-    height:75%;
+    height:400px;
     display:flex;
     flex-direction: column;
     margin:auto;
 }
 
-.aWrapper p {
+.aWrapper {
+    width:75%;
+    height:75%;
     margin:auto;
-    color:#424242;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position:relative;
 }
 
-.aWrapper a {
-    color:white;
-    padding:15px;
-    width:150px;
-    background-color:#457afb;
-    border-radius:30px;
-    text-decoration: none;
-    text-align: center;
+.aWrapper h1, .aWrapper p{
+    text-align:left;
 }
 
-.aWrapper a:hover {
-    background-color:#e06536;
+.spanBox {
+    display: flex;
+    align-items:flex-start;
+}
+
+.spanBox span {
+    margin: 0px 10px 0px 10px;
+}
+
+.spanBox .edge {
+    margin: 0px 10px 0px 0px;
 }
 
 .imageRight {
-    width:50%;
-    height:100%;
-    display:flex;
-}
-
-.imageWrapper {
     width:600px;
     height:400px;
     margin:auto;
+}
+
+.imageWrapper {
+    width:100%;
+    height:100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+/*Work section images --------------*/
 
 #one {
     background-image: url("../assets/mobi-portfolio.jpg");
@@ -208,10 +168,88 @@
     background-image: url("../assets/iusm-portfolio.jpg");
 }
 
-#contactHeader {
-    position:absolute;
-    top:20px;
-    left:30px;
+/*Contact section ----------------------*/
+
+.contactWrapper {
+    margin:auto;
+    width:1200px;
+    height:500px;
+    display:flex;
+    flex-direction: column;
+}
+
+.contactContent {
+    width:100%;
+    height:75%;
+    margin:auto;
+    display:flex;
+}
+
+.contact-left, .contact-right {
+    display:flex;
+    margin:auto;
+    width:50%;
+    height:100%;
+}
+
+.contact-left {
+    align-items: center;
+}
+
+.contact-left-wrapper {
+    display:flex;
+    width:75%;
+    height:75%;
+    margin:auto;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact-left-wrapper p, h2 {
+    text-align: left;
+}
+
+.contact-left-wrapper p {
+    line-height: 1.75em;
+}
+
+.contact-right {
+    flex-direction: column;
+}
+
+.contactRow {
+    height:25%;
+    width:50%;
+    display:flex;
+    margin:auto;
+}
+
+.left-of-row, .right-of-row {
+    height:100%;
+    display:flex;
+    margin:auto;
+}
+
+.left-of-row {
+    width:25%;
+}
+
+.right-of-row {
+    width:75%;
+}
+
+.left-of-row img {
+    width:45px;
+    height:45px;
+    margin:auto;
+}
+
+.left-of-row linked {
+    width:48px;
+}
+
+.right-of-row p, .right-of-row a {
+    margin:auto;
 }
 
 #footer {

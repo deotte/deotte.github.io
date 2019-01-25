@@ -13,10 +13,54 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 16px;
 }
 
-h1, h2, h3, h4, h5, h6, span {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
 }
 
-p, li, a, button, input, textarea {
+p, li, a, button, input, textarea, span {
     font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    2.5em;
+}
+
+h2 {
+    2em;
+}
+
+h3 {
+    1.5em;
+}
+
+p, span, a {
+    font-size:1em;
+}
+
+span {
+    font-size:.9em;
+    padding:10px;
+    color:#FFFFFF;
+    background-color:#e06536;
+    border-radius:5px;
+}
+
+a {
+    text-decoration: none;
+    color:#000000;
+}
+
+a:hover {
+    color:#e06536;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+hr {
+    width:50%;
+    background-color:#e06536;
+    color:#e06536;
+    height:2px;
 }

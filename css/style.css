@@ -115,6 +115,10 @@
     text-align:left;
 }
 
+.aWrapper p {
+    line-height: 1.75em;
+}
+
 .spanBox {
     display: flex;
     align-items:flex-start;
@@ -250,6 +254,11 @@
 
 .right-of-row p, .right-of-row a {
     margin:auto;
+}
+
+.right-of-row a {
+    border-bottom: 1px solid #e06536;
+    padding-bottom: .5em;
 }
 
 #footer {

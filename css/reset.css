@@ -37,6 +37,10 @@ p, span, a {
     font-size:1em;
 }
 
+.date {
+   color:rgba(0,0,0,.75); 
+}
+
 span {
     font-size:.9em;
     padding:10px;

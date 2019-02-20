@@ -86,11 +86,21 @@
     left:30px;
 }
 
+.partial-wrapper {
+    width:100%;
+    height:500px;
+    display:flex;
+}
+
 .partial {
     width:1200px;
-    height:500px;
+    height:100%;
     margin:auto;
     display:flex;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e06536;
 }
 
 .textLeft, .imageRight {
@@ -117,30 +127,20 @@
 
 .aWrapper p {
     line-height: 1.75em;
-}
-
-.spanBox {
-    display: flex;
-    align-items:flex-start;
-}
-
-.spanBox span {
-    margin: 0px 10px 0px 10px;
-}
-
-.spanBox .edge {
-    margin: 0px 10px 0px 0px;
+    font-size: .9em;
 }
 
 .imageRight {
     width:600px;
     height:400px;
     margin:auto;
+    display:flex;
 }
 
 .imageWrapper {
-    width:100%;
-    height:100%;
+    width:450px;
+    height:300px;
+    margin:auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

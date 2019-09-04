@@ -1,5 +1,4 @@
 /*Hello section ---------------------*/
-
 #home .hello {
     margin:auto;
     width:500px;
@@ -79,7 +78,6 @@
 
 
 /*Work section ------------------*/
-
 #workHeader {
     position: absolute;
     bottom:20px;
@@ -147,7 +145,6 @@
 }
 
 /*Work section images --------------*/
-
 #one {
     background-image: url("../assets/mobi-portfolio.jpg");
 }
@@ -173,7 +170,6 @@
 }
 
 /*Contact section ----------------------*/
-
 .contactWrapper {
     margin:auto;
     width:1200px;
